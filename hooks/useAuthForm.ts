@@ -31,7 +31,7 @@ export function useAuthForm(actionType: AuthActionType) {
         ? { email, password }
         : { name, email, password };
 
-      const response = await fetch(`/api${endpoint}`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://192.168.56.12'}${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
