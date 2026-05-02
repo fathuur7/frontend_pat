@@ -1,8 +1,8 @@
 interface VideoInfoProps {
   title: string;
   tags: string[];
-  views: number;
-  likes: number;
+  views?: number;
+  likes?: number;
   liked?: boolean;
   description: string;
   onLike?: () => void;
@@ -10,6 +10,8 @@ interface VideoInfoProps {
   saved?: boolean;
   onSave?: () => void;
   isSaving?: boolean;
+  rating?: number;
+  reviewCount?: string;
 }
 
 const TAG_COLORS: Record<string, string> = {
@@ -23,8 +25,8 @@ const TAG_COLORS: Record<string, string> = {
 export default function VideoInfo({
   title,
   tags,
-  views,
-  likes,
+  views = 0,
+  likes = 0,
   liked = false,
   description,
   onLike,
