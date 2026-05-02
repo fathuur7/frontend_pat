@@ -33,8 +33,40 @@ const nextConfig: NextConfig = {
         hostname: "lh3.googleusercontent.com",
       },
       {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "**.wikipedia.org",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "i.imgur.com",
+        pathname: "/**",
+      },
+      {
         protocol: "http",
         hostname: "localhost",
+        port: "4000",
+        pathname: "/uploads/**",
+      },
+      {
+        protocol: "http",
+        hostname: "192.168.56.12",
+        pathname: "/uploads/**",
+      },
+      {
+        protocol: "http",
+        hostname: "192.168.56.10",
+        port: "4000",
+        pathname: "/uploads/**",
+      },
+      {
+        protocol: "http",
+        hostname: "192.168.56.11",
         port: "4000",
         pathname: "/uploads/**",
       },

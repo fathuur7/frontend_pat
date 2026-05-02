@@ -15,11 +15,15 @@ export default function Header() {
   const pathname = usePathname();
   const router = useRouter();
   const searchRef = useRef<HTMLInputElement>(null);
+  const [mounted, setMounted] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [userRole, setUserRole] = useState<string>("user");
   const [isUpgrading, setIsUpgrading] = useState(false);
+
+  // Prevent hydration mismatch
+  useEffect(() => { setMounted(true); }, []);
 
   useEffect(() => {
     const token = localStorage.getItem("nadasaku_token");
@@ -141,7 +145,7 @@ export default function Header() {
           </button>
         </form>
 
-        {isLoggedIn ? (
+        {mounted && (isLoggedIn ? (
           /* ── Logged In: Avatar + Dropdown ── */
           <div className="relative">
             <button
@@ -206,7 +210,7 @@ export default function Header() {
               JOIN FREE
             </Link>
           </div>
-        )}
+        ))}
 
         {/* ── Mobile Nav Toggle ── */}
         <button 
