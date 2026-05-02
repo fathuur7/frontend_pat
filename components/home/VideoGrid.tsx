@@ -12,7 +12,7 @@ export default function VideoGrid() {
   useEffect(() => {
     async function fetchSeries() {
       try {
-        const res = await fetch(`${BACKEND_URL}/api/videos?sort=likes&limit=1000&excludeGenre=MOVIE`);
+        const res = await fetch(`${BACKEND_URL}/api/videos?sort=likes&limit=50&excludeGenre=MOVIE`);
         const data = await res.json();
         if (data.success) {
           setSeriesList(data.data);
