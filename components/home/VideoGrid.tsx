@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import VideoCard from "./VideoCard";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
 
 export default function VideoGrid() {
   const [seriesList, setSeriesList] = useState<any[]>([]);
@@ -63,3 +63,4 @@ export default function VideoGrid() {
     </section>
   );
 }
+

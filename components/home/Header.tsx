@@ -58,7 +58,7 @@ export default function Header() {
     try {
       setIsUpgrading(true);
       const token = localStorage.getItem("nadasaku_token");
-      const backendUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+      const backendUrl = process.env.NEXT_PUBLIC_API_URL || "/api";
       
       const res = await fetch(`${backendUrl}/api/users/upgrade`, {
         method: "PUT",
@@ -268,4 +268,5 @@ export default function Header() {
     </header>
   );
 }
+
 

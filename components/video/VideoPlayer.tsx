@@ -8,6 +8,7 @@ interface VideoPlayerProps {
   thumbnail?: string;
   alt?: string;
   src?: string; // HLS url or mp4 url
+  totalDuration?: string;
 }
 
 export default function VideoPlayer({ thumbnail, alt, src }: VideoPlayerProps) {

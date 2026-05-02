@@ -9,7 +9,7 @@ import VideoCard from "@/components/home/VideoCard";
 
 import { useState, useEffect } from "react";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
 
 function SearchResults() {
   const searchParams = useSearchParams();
@@ -112,3 +112,4 @@ export default function SearchPage() {
     </div>
   );
 }
+

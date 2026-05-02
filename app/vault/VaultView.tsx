@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import VideoCard from "@/components/home/VideoCard";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
 
 export default function VaultView() {
   const [savedVideos, setSavedVideos] = useState<any[]>([]);
@@ -109,3 +109,4 @@ export default function VaultView() {
     </div>
   );
 }
+

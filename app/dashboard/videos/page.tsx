@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
 
 interface VideoSeries {
   id: string;
@@ -157,3 +157,4 @@ export default function VideosPage() {
     </div>
   );
 }
+

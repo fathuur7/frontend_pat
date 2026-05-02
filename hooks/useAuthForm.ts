@@ -31,7 +31,7 @@ export function useAuthForm(actionType: AuthActionType) {
         ? { email, password }
         : { name, email, password };
 
-      const response = await fetch(`http://localhost:4000${endpoint}`, {
+      const response = await fetch(`/api${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -77,3 +77,4 @@ export function useAuthForm(actionType: AuthActionType) {
     handleFormSubmit,
   };
 }
+
