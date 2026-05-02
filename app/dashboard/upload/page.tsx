@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "";
 
 type Step = "series" | "episode";
 

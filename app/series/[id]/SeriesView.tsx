@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import VideoPlayer from "@/components/video/VideoPlayer";
 import VideoInfo from "@/components/video/VideoInfo";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "";
 
 interface SeriesViewProps {
   series: any;

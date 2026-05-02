@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import CategoryCard from "./CategoryCard";
 import type { Category } from "@/lib/types";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "";
 
 const STYLES = [
   { bg: "bg-comic-red", icon: "bolt", iconColor: "text-comic-red", titleColor: "text-white", descColor: "text-white/90" },

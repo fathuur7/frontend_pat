@@ -6,7 +6,7 @@ import SeriesView from "./SeriesView";
 // Server-side fetch uses the internal URL (tidak lewat browser)
 const BACKEND_URL = process.env.BACKEND_URL_INTERNAL 
   || process.env.NEXT_PUBLIC_API_URL 
-  || "http://localhost:4000";
+  || "http://192.168.56.10:4000";
 
 interface PageProps {
   params: Promise<{ id: string }>;

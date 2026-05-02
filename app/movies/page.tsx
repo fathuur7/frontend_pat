@@ -5,7 +5,7 @@ import Header from "@/components/home/Header";
 import Footer from "@/components/home/Footer";
 import VideoCard from "@/components/home/VideoCard";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "";
 
 export default function MoviesPage() {
   const [moviesList, setMoviesList] = useState<any[]>([]);

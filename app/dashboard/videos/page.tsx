@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "";
 
 interface VideoSeries {
   id: string;

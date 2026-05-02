@@ -9,7 +9,7 @@ import VideoCard from "@/components/home/VideoCard";
 
 import { useState, useEffect } from "react";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "";
 
 function SearchResults() {
   const searchParams = useSearchParams();
