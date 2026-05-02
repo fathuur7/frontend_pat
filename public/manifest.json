@@ -1,0 +1,12 @@
+{
+  "name": "NadaSaku – Watch Anime & Animated Series",
+  "short_name": "NadaSaku",
+  "description": "The world's first premium streaming service built entirely for animation fans.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f8f5",
+  "theme_color": "#f4f425",
+  "orientation": "portrait-primary",
+  "categories": ["entertainment", "video"],
+  "lang": "en"
+}
